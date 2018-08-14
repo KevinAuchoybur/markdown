@@ -20,7 +20,7 @@ class App extends React.Component{
      //Fonction flechée pour éditer le text
      editText = (event) => {
         const text = event.target.value;
-        console.log(text);
+        /*console.log(text);*/
         //Mettre à jour un state
         this.setState({text});
      };
@@ -46,6 +46,7 @@ class App extends React.Component{
                     </textarea>
             </div>
                 <div className="col-sm-6">
+                <h1>Votre contenu</h1>
                 <div dangerouslySetInnerHTML={this.renderText(this.state.text)}/>
             </div>
             </div>
